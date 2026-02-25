@@ -13,8 +13,6 @@ The user must have:
 1. Arize AX CLI installed (`pip install arize-ax-cli`)
 2. CLI configured with valid credentials (`ax config init`)
 
-**If not set up**: Use the `/setup-arize-cli` skill first.
-
 ## Core Dataset Commands
 
 ### List All Datasets
