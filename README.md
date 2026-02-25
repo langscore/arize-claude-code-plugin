@@ -11,29 +11,18 @@ This repository contains the following plugins:
 
 ## Installation
 
-### Claude Code CLI
-
-Install all plugins from the marketplace:
+Add the marketplace from repo owner/name:
 
 ```bash
-claude plugin add https://github.com/Arize-ai/arize-claude-code-plugin.git
+claude plugin marketplace add Arize-ai/arize-claude-code-plugin
 ```
 
-This installs:
-- `claude-code-tracing@arize-claude-plugin`
-- `arize-platform@arize-claude-plugin`
-
-#### Alternative: Manual Installation (Tracing Only)
-
-If you prefer not to use the plugin marketplace, you can manually install the tracing plugin:
+Then install the plugins:
 
 ```bash
-git clone https://github.com/Arize-ai/arize-claude-code-plugin.git
-cd arize-claude-code-plugin
-./install.sh
+claude plugin install claude-code-tracing@arize-claude-plugin
+claude plugin install arize-platform@arize-claude-plugin
 ```
-
-**Note:** This copies hooks to `~/.claude/hooks/` and configures them in `~/.claude/settings.json`. The `arize-platform` plugin skills are only available via marketplace installation.
 
 ### Claude Agent SDK
 
